@@ -6,7 +6,7 @@ module.exports = {
     title: `hyge`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-theme-ui", "gatsby-plugin-image", {
+  plugins: ["gatsby-plugin-theme-ui", "gatsby-plugin-image", "gatsby-plugin-styled-components", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
