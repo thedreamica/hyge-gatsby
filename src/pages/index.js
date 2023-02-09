@@ -7,6 +7,7 @@ import Offering from "../components/landing/offering"
 import Agency from "../components/landing/agency"
 import Solution from "../components/landing/solution"
 import Footer from "../components/common/footer"
+import Main from "../components/newChanges/Main"
 
 const IndexPage = () => {
   return (
@@ -16,7 +17,8 @@ const IndexPage = () => {
         display: 'flex',
         flexDirection: 'column'
       }}>
-        <Hero />
+        <Main />
+        {/* <Hero /> */}
         <Offering />
         <Agency />
         <Solution />
