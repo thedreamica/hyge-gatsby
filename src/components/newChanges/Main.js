@@ -2,49 +2,48 @@
 import { jsx } from "theme-ui"
 import React from 'react'
 import { Menu } from '@styled-icons/feather/Menu'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Main = () => {
     return (
         <>
             <div sx={{
                 width: '100%',
-                height: '100vh',
-                overflow: 'hidden',
+                height: '100%',
                 paddingLeft: '86px',
+                margin: '0 0 6rem 0',
                 ['@media (max-width: 576px)']: {
-                    padding: ' 2rem',
+                    padding: '0.85rem 1.5rem',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
                     textAlign: 'center',
                     flexDirection: 'column',
-                    width: '100%',
-
+                    margin: '0 0 1.5rem 0',
                 }
             }}>
-
                 <div sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
+                    width: '100%',
                     ['@media (max-width: 576px)']: {
                         order: '2',
                         justifyContent: 'center',
                         flexDirection: 'column',
                         padding: '0 0.25rem',
                     }
-
                 }}>
                     <div sx={{
                         position: 'absolute',
-                        top: '3%',
+                        top: '1%',
                         ['@media (max-width: 576px)']: {
                             position: 'initial',
                             display: 'flex',
                             justifyContent: 'space-between',
                             width: '100%',
                             alignItems: 'center',
-                            marginBottom: '2.4rem',
+                            margin: '0rem 0 2rem 0',
                         }
                     }}>
                         <h2 sx={{
@@ -53,7 +52,7 @@ const Main = () => {
                             fontWeight: '700',
                             width: 'fit-content',
                             ['@media (max-width: 576px)']: {
-                                fontSize: '1.8rem',
+                                fontSize: '2rem',
                             }
                         }}>hyge</h2>
                         <button sx={{
@@ -61,6 +60,7 @@ const Main = () => {
                             outline: 'none',
                             border: 'none',
                             display: 'none',
+                            cursor: 'pointer',
                             ['@media (max-width: 576px)']: {
                                 display: 'block',
                             }
@@ -88,34 +88,29 @@ const Main = () => {
                             }
                         }}>
                             <h1 sx={{
-                                fontSize: '62px',
-                                height: '115px',
-                                width: '600px',
-                                margin: '2.8rem 0px',
+                                fontSize: '60px',
                                 fontWeight: '600',
-                                lineHeight: '66.97px',
+                                color: '#6E1971',
+                                lineHeight: '67px',
+                                width: '70%',
+                                marginBottom: '1.5rem',
                                 ['@media (max-width: 576px)']: {
-                                    fontSize: '32px',
-                                    lineHeight: '34.57px',
+                                    fontSize: '40px',
+                                    lineHeight: '43px',
                                     width: 'fit-content',
-                                    height: '62px',
-                                    margin: '2rem 0'
-                                },
+                                }
                             }}>Our analysis is your final results</h1>
                             <p sx={{
                                 color: '#353535',
                                 lineHeight: '27px',
-                                width: '477px',
                                 fontSize: '16px',
-                                fontWeight: '400',
-                                height: '70px',
+                                fontWeight: '600',
+                                width: '50%',
+                                marginBottom: '1rem',
                                 ['@media (max-width: 576px)']: {
-                                    fontSize: '16px',
-                                    lineHeight: '18px',
+                                    lineHeight: '22px',
                                     width: 'fit-content',
-                                    height: '39px',
-                                    marginBottom: '2.4rem',
-                                },
+                                }
                             }}>This to inform you that we are in a rush to provide  the good things to the world for the people to cherish and live</p>
                             <button sx={{
                                 background: 'linear-gradient(90deg, #601C6F -82.14%, #C01F6C 175.65%)',
@@ -135,21 +130,24 @@ const Main = () => {
                                 },
                             }}>know more</button>
                         </div>
-                        <img sx={{
-                            width: '1000px',
-                            height: '700px',
+                        <div sx={{
+                            height: 'auto',
+                            width: 'auto',
                             ['@media (max-width: 576px)']: {
                                 order: '1',
                                 width: 'fit-content',
-                                height: '320px',
+                                height: 'auto',
                                 objectFit: 'contain',
+                                marginBottom: '2rem',
                             },
-                        }} src="https://i.ibb.co/rMFHf4F/Group-3.png" alt="" />
+                        }}>
+                            <StaticImage src="https://i.ibb.co/rMFHf4F/Group-3.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
         </>
     )
-}
+};
 
-export default Main
+export default Main;

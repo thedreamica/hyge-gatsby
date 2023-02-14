@@ -8,6 +8,8 @@ import Agency from "../components/landing/agency"
 import Solution from "../components/landing/solution"
 import Footer from "../components/common/footer"
 import Main from "../components/newChanges/Main"
+import Business from "../components/newChanges/Business"
+import WhyChooseUs from "../components/newChanges/WhyChooseUs/WhyChooseUs"
 
 const IndexPage = () => {
   return (
@@ -18,11 +20,13 @@ const IndexPage = () => {
         flexDirection: 'column'
       }}>
         <Main />
+        <Business />
+        <WhyChooseUs />
         {/* <Hero /> */}
         <Offering />
         <Agency />
-        <Solution />
-        <Footer />
+        {/* <Solution /> */}
+        {/* <Footer /> */}
       </div>
     </>
   )
